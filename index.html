@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <title>Meu Formulário</title>
+    <link rel='stylesheet' href='styles.css'>
+  </head>
+  <body>
+    <div class='formulario'>
+   <div class='titulo'> 
+     <h1 id='title'>Meu formulário</h1>
+    <p id='description'>Obrigado por dedicar seu tempo para nos ajudar a melhorar a plataforma</p>
+    </div>
+    <form id='survey-form'>
+      <div>
+<label id="name-label"> Seu nome:<input type='text' id='name'placeholder='Seu nome:' required></label>
+</div>
+<div>
+<label id="email-label">Seu email:<input type='email' id='email' placeholder='seu email' required></label>
+</div>
+<div>
+<label id="number-label">Sua idade:<input type='number' min='12' max='90' id='number'placeholder='123'></label>
+</div>
+<div>
+<label>Qual opção melhor descreve sua função atual? </label>
+  <select id='dropdown'>
+    <option disabled select value>Selecione a função atual</option>
+    <option value='estudade'>Estudade</option>
+    <option value='trabalho'>Trabalho em tempo integral</option>
+    <option value='estudade integral'>Aluno em tempo integral</option>
+    <option value='vagabundo'>Prefiro não dizer</option></select>
+    </div>
+    <div>
+      <label>Você recomendaria o freeCodeCamp a um amigo?</label>
+      <label>Sim<input type='radio' value='sim' name='opçao' checked ></label>
+      <label>Não<input type='radio' value='não' name='opçao'></label>
+       <label>Talvez<input type='radio' value='talvez' name='opçao'></label>
+    </div>
+    <div>
+      <div>
+        <label>O que você gostaria de ver melhorado? (Marque todas as opções aplicáveis)</label></div>
+    <label>Projetos front-end<input type='checkbox' value='front-end' name=' front-end'></label>
+     <label>Projetos de back-end<input type='checkbox' value='back-end' name='back-end' ></label>
+      <label for='visualização de dados'>
+Visualização de dados<input type='checkbox' value='visualização de dados' name='dados' checked></label>
+ <label for='desafios'>
+Desafios<input type='checkbox' value='desafios' name='desafios' checked>
+</label>
+    </div>
+    <div>
+      <label>Algum comentário ou sugestão?</label>
+<textarea></textarea>
+    </div>
+    <div><input type='submit' id='submit'></div>
+    </form>
+    </div>
+  </body>
+</html>
